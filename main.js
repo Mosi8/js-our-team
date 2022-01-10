@@ -31,3 +31,9 @@ const team = [
   },
 ];
 
+const teamContainer = document.querySelector('.team-container');
+
+for (let i = 0; i< team.length; i++){
+  teamContainer.innerHTML += '<div class="team-card"><div class="card-image"><img src="img/' + team[i].image + '"/></div><div class="card-text"><h3>' + team[i].name + '</h3><p>' + team[i].role + '</p></div></div>';
+}
+
